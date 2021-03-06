@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/profile_picture_description"
+        android:src="@drawable/itachi"
+        android:layout_marginEnd="64dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/DefaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/profile_example_name"
+            android:textColor="@color/design_default_color_on_secondary" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="text"
+            android:gravity="top|start"
+            android:hint="@string/profile_notes_hint"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="10" />
+    </LinearLayout>
+
+</LinearLayout>

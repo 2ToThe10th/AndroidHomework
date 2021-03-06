@@ -1,4 +1,4 @@
-package com.github.TwoToThe10th
+package com.github.twoToThe10th
 
 import org.junit.Test
 
